@@ -18,7 +18,7 @@ body {margin: 0; padding: 0;}
     background-color: #FFFFFF; 
     margin:0;
     position: fixed;
-    z-index:100;
+    z-index:1500;
 }
 #nav ul {list-style-type: none; padding:0; }
 #nav li {display: inline; padding: 0 15px; line-height: 110px; }

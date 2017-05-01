@@ -146,5 +146,3 @@ function makeFloat(element) {
     element.animate({top: '-=20'}, 1000);
     makeFloat(element)
 }
-
-
