@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="286" height="286" viewBox="0 0 286 286">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #323232;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1649" y="8420" width="286" height="286" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="1" dy="1.732" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="9"/>
+      <feFlood result="flood" flood-opacity="0.15"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Facebook" class="cls-1" d="M1790.5,8500.5a60,60,0,1,0,60,60A60,60,0,0,0,1790.5,8500.5Zm15.88,59.75h-10.39v37.05h-15.4v-37.05h-7.32v-13.08h7.32v-8.48c0-6.06,2.88-15.53,15.54-15.53l11.41,0.04v12.7h-8.28c-1.35,0-3.27.68-3.27,3.56v7.71h11.74Z" transform="translate(-1649 -8420)"/>
+</svg>
