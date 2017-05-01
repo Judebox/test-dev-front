@@ -1,14 +1,156 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Test dev front</title>
-    <link rel="stylesheet" href="/app.css">
-    <script src="/app.js"></script>
-    <script>require('initialize');</script>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Test dev front</title>
+        <link rel="stylesheet" href="/app.css">
+        <link rel="stylesheet" href="/bootstrap.min.css">
+        <link rel="stylesheet" href="/jquery-ui.min.css">
+        <script src="/jquery-3.2.1.min.js"></script>
+        <script src="/jquery-ui.min.js"></script>
 
-  </body>
+        <script src="/app.js"></script>
+        <script src="/bootstrap.min.js"></script>    
+        <script>//require('initialize');</script>
+    </head>
+    <body>
+
+
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">  
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="nav" class="collapse navbar-collapse">
+                <ul id="menu" class="navbar-left navbar-nav">
+                    <li class="nav-item"><a href="#bons-plans">Découvrir</a></li>
+                    <li class="nav-item"><a href="#bons-plans">Séjourner</a></li>
+                    <li class="nav-item"><a href="#bons-plans">Se divertir</a></li>
+                    <li class="nav-item"><a href="#bons-plans">Pratique</a></li>
+                </ul>
+                <ul id="icons" class="navbar-right visible-lg">
+                    <li><a href="#bons-plans"><img src="/media/svg/calendar.svg" /></a></li>
+                    <li><a href="#bons-plans"><img src="/media/svg/carte_interactive.svg" /></a></li>
+                    <li><a href="#bons-plans"><img src="/media/svg/panier.svg" /></a></li>
+                    <li><a href="#bons-plans"><img src="/media/svg/loupe.svg" /></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="main-content">
+            <div id="main-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-carousel" data-slide-to="1"></li>
+                    <li data-target="#main-carousel" data-slide-to="2"></li>
+                </ol>
+                <div id="main-arrow" class="carousel-caption"><a href="#bons-plans"><img class="svg fleche" src="/media/svg/fleche.svg"></a></div>
+                <div class="carousel-inner">
+                    <div class="fill item active" style="background-image: url(/media/photos/Slider_01_visuelLaMysterieuse_gradient.jpg);">  
+                        <div class="main-logo carousel-caption"><img src="/media/images/logo.png" /></div>
+                        <div class="main-title carousel-caption">La mystérieuse</div>
+                    </div>   
+                    <div class="fill item" style="background-image: url(/media/photos/instagram.jpg);"> 
+                        <div class="main-logo carousel-caption"><img src="/media/images/logo.png"></div>
+                        <div class="main-title carousel-caption">La gourmande</div>
+                    </div>  
+                    <div class="fill item" style="background-image: url(/media/photos/facebook.jpg);">  
+                        <div class="main-logo carousel-caption"><img src="/media/images/logo.png"></div>
+                        <div class="main-title carousel-caption">La festive</div>
+                    </div> 
+                    <div class="marker-map" data-target="marker-castle">
+                        <div class="marker-icon"><img class="svg" src="/media/svg/chateau.svg"></div>
+                        <div class="marker-pin"><img class="svg" src="/media/svg/marqueur.svg"></div>
+                    </div>
+                    <div class="marker-map" data-target="marker-circuit">
+                        <div class="marker-icon"><img class="svg" src="/media/svg/panneau_circuits.svg"></div>
+                        <div class="marker-pin"><img class="svg" src="/media/svg/marqueur.svg"></div>
+                    </div>
+                    <div id="marker-castle" class="marker-dialog" >
+                        <div class="marker-close"><img class="svg" src="/media/images/close.png"></div>
+                        <div class="marker-image"><img class="svg" src="/media/svg/chateau.svg"></div>
+                        <h3>Ancient couvent</h3>
+                        <p>Venez vous imprégner de cette ambiance sereine...</p>
+                        <button type="button" class="btn btn-primary">Localiser<img class="pointeur svg" src="/media/images/carte_pointeur.png"></button>
+                    </div>
+                    <div id="marker-circuit" class="marker-dialog" >
+                        <div class="marker-close"><img class="svg" src="/media/images/close.png"></div>
+                        <div class="marker-image"><img class="svg" src="/media/svg/panneau_circuits.svg"></div>
+                        <h3>Circuits</h3>
+                        <p>Promenez-vous autour de différentes thématiques !</p>
+                        <button type="button" class="btn btn-primary">Localiser<img class="pointeur svg" src="/media/images/carte_pointeur.png"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a id="bons-plans"></a>
+        <div id="plans-content">
+            <div id="plans-header">
+                <div><img class="svg ampoule" src="/media/svg/ampoule.svg" /></div>
+                <div class="plans-title">Bons Plans</div>
+            </div>
+            <div id="plans-items" class="row">
+                <div class="col-md-6">
+                    <div class="bon-plan row">
+                        <div class="plans-left col-md-6 col-sm-12">
+                            Logez-vous !
+                            <div class="image-circle">
+                                <img src="/media/photos/logement.jpg" />
+                            </div>
+                        </div>
+                        <div class="plans-right col-md-6 col-sm-12">
+                            <h1>Dormez dans un tipi !</h1>
+                            <h2>à l’asinerie d’En Manaou</h2>
+                            <p>Seul ou entre amis, vous pouvez dormir dans des yourtes, tipis et roulottes, un coin grillade, des sanitaires écolos, toilettes sèches, douches solaires, salle commune avec frigos, gazinière... Les enfants pourront le matin donner à manger aux animaux de la ferme, les ânes vous attendent pour des balades dans les bois ou en attelage.</p>
+                            <button type="button" class="btn btn-primary">En savoir plus<img class="fleche" src="/media/images/fleche_blc.png"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bon-plan row">
+                        <div class="plans-left col-md-6 col-sm-12">
+                            Savourez !
+                            <div class="image-circle">
+                                <img src="/media/photos/restaurant.jpg" />
+                            </div>
+                        </div>
+                        <div class="plans-right col-md-6 col-sm-12">
+                            <h1>Mangez local !</h1>
+                            <h2>à La Croisée des Saveurs</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .</p> 
+                            <button type="button" class="btn btn-primary">En savoir plus<img class="fleche" src="/media/images/fleche_blc.png"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="plans-offre">
+                        <img src="/media/images/tickets.png">
+                        <div>
+                            Profitez de -20% sur notre billeterie !<br />
+                            <img class="fleche" src="/media/images/fleche_blc.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="plans-offre">
+                        <img src="/media/images/famille.png">
+                        <div>
+                            Découvrez nos séjours spécial famille !<br />
+                            <img class="fleche" src="/media/images/fleche_blc.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="plans-footer">
+                <button type="button" class="btn btn-primary">Tous les bons plans</button>
+            </div>
+        </div>
+
+    </body>
 </html>
